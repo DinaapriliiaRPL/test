@@ -40,14 +40,27 @@ class _MyHomePageState extends State<MyHomePage> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
+      ),
+      drawer: Drawer( 
+        child:ListView(
+        children: [
+          DrawerHeader(child: Text("Menu Yummy Hari Ini")),
+          ListTile(
+              leading: Icon(Icons.home),
+              title: Text(
+                "HOME",
+              ),
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text(
+              "TENTANG",
+            ),
+          )
+        ],
+      ),
       ),
       body: ListView(
         padding: EdgeInsets.all(15),
@@ -152,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 "12.7 rb",
                                 style: TextStyle(fontSize: 12),
                               ),
-                              SizedBox(width: 100, height: 50),
+                              SizedBox(width: 70, height: 50),
                               CircleAvatar(
                                 backgroundColor:
                                     Color.fromARGB(255, 182, 148, 135),
@@ -263,7 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               "21.4 rb",
                               style: TextStyle(fontSize: 12),
                             ),
-                            SizedBox(width: 100, height: 50),
+                            SizedBox(width: 70, height: 50),
                             CircleAvatar(
                               backgroundColor:
                                   Color.fromARGB(255, 182, 148, 135),
@@ -378,7 +391,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               "15.2 rb",
                               style: TextStyle(fontSize: 12),
                             ),
-                            SizedBox(width: 100, height: 50),
+                            SizedBox(width: 70, height: 50),
                             CircleAvatar(
                               backgroundColor:
                                   Color.fromARGB(255, 182, 148, 135),
@@ -488,7 +501,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               "10.1 rb",
                               style: TextStyle(fontSize: 12),
                             ),
-                            SizedBox(width: 100, height: 50),
+                            SizedBox(width: 70, height: 50),
                             CircleAvatar(
                               backgroundColor:
                                   Color.fromARGB(255, 182, 148, 135),
